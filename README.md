@@ -37,7 +37,8 @@ Unlike a simple speedometer app, MotoSpeedo uses a combination of GPS and sensor
 # How It Works: The Technology Behind the Accuracy
 MotoSpeedo achieves high precision through a three-stage process:
 
-**The Start:** Instead of relying on slow GPS, the app uses the phone's accelerometer to detect the exact moment of launch. The master timer starts at the final countdown beep using a high-resolution system clock (System.nanoTime()). If the phone doesnt detect any acceleraometer movement at the start then dont worry! the timer automatically starts after the beep.
+**The Start:** Instead of relying on slow GPS, the app uses the phone's accelerometer to detect the exact moment of launch. The master timer starts at the final countdown beep using a high-resolution system clock (System.nanoTime()). 
+If the phone doesnt detect any accelerometer movement at the start then dont worry! The timer automatically starts after the beep.
 
 **The Run:** A foreground service ensures the app maintains a high-priority connection to the device's GPS, collecting location and speed data at the fastest possible rate, even with the screen off.
 
